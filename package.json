@@ -1,0 +1,12 @@
+{
+  "name": "synthica-journal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Synthica Journal — public, open-access journal site. Zero-dependency static site generator; content comes from the Synthica dashboard backend (or bundled fallback data).",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "python3 -m http.server 8090 -d dist"
+  },
+  "engines": { "node": ">=18" }
+}

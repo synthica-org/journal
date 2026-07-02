@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Synthica Journal",
+    "issn": "pending",
+    "publisher": "Synthica",
+    "frequency": "Quarterly",
+    "dashboardUrl": "https://app.synthica.org",
+    "journalUrl": "https://synthica-org.github.io/journal",
+    "doiPrefix": "10.55555",
+    "license": "CC BY 4.0",
+    "currentVolume": 2,
+    "currentIssue": 1
+  },
+  "issues": [
+    { "volume": 1, "issue": 1, "status": "closed", "publishedAt": "2025-09-30", "articleCount": 2, "editorial": "Our inaugural issue collects the first peer-reviewed work by Synthica's student researchers." },
+    { "volume": 1, "issue": 2, "status": "closed", "publishedAt": "2025-12-20", "articleCount": 2, "editorial": "Closing our first volume with work spanning computational biology and behavioural economics." },
+    { "volume": 2, "issue": 1, "status": "open", "publishedAt": null, "articleCount": 2, "editorial": null }
+  ],
+  "articles": [
+    {
+      "id": "pub_0001",
+      "doi": "10.55555/synthica.2025.0001",
+      "title": "Modeling Coral Bleaching Thresholds Under Regional Warming Scenarios",
+      "articleType": "Article",
+      "authors": [
+        { "name": "Sam Rivera", "affiliation": "Bayside Science Academy" },
+        { "name": "Jordan Kim", "affiliation": "Northgate High School" }
+      ],
+      "category": "Biology",
+      "abstract": "Coral reefs face escalating thermal stress. Using public NOAA reef temperature datasets, we model bleaching onset thresholds across three regional warming scenarios and estimate recovery windows. Our results suggest that fortnightly thermal anomaly exposure is a stronger predictor of bleaching onset than seasonal means, with implications for local monitoring programs run by student research teams.",
+      "keywords": ["coral bleaching", "climate", "thermal stress", "reef monitoring"],
+      "receivedAt": "2025-06-14", "acceptedAt": "2025-08-30", "publishedAt": "2025-09-30",
+      "volume": 1, "issue": 1, "pages": "1-14",
+      "pdfUrl": "https://example.org/papers/coral-bleaching.pdf",
+      "license": "CC BY 4.0", "openAccess": true,
+      "references": [
+        "Hughes, T. P. et al. Global warming and recurrent mass bleaching of corals. Nature 543, 373-377 (2017).",
+        "NOAA Coral Reef Watch. Daily 5km Satellite Coral Bleaching Heat Stress Monitoring (2024).",
+        "Sully, S. et al. A global analysis of coral bleaching over the past two decades. Nat. Commun. 10, 1264 (2019)."
+      ],
+      "metrics": { "accesses": 412, "citations": 2, "altmetric": 6 }
+    },
+    {
+      "id": "pub_0002",
+      "doi": "10.55555/synthica.2025.0002",
+      "title": "A Lightweight CNN for Classifying Pollinator Species from Smartphone Images",
+      "articleType": "Article",
+      "authors": [
+        { "name": "Robin Diaz", "affiliation": "Independent Researcher, Synthica" }
+      ],
+      "category": "Computer Science",
+      "abstract": "Citizen-science pollinator surveys are limited by identification skill. We train a lightweight convolutional neural network on 12,000 smartphone images to classify six common pollinator families with 91% accuracy on held-out data, small enough to run offline on mid-range phones. We release the model and a labelling protocol suitable for classroom deployments.",
+      "keywords": ["computer vision", "pollinators", "citizen science", "edge ML"],
+      "receivedAt": "2025-05-02", "acceptedAt": "2025-08-21", "publishedAt": "2025-09-30",
+      "volume": 1, "issue": 1, "pages": "15-27",
+      "pdfUrl": "https://example.org/papers/pollinator-cnn.pdf",
+      "license": "CC BY 4.0", "openAccess": true,
+      "references": [
+        "Howard, A. G. et al. MobileNets: Efficient convolutional neural networks for mobile vision applications. arXiv:1704.04861 (2017).",
+        "Van Horn, G. et al. The iNaturalist species classification and detection dataset. CVPR (2018)."
+      ],
+      "metrics": { "accesses": 655, "citations": 4, "altmetric": 11 }
+    },
+    {
+      "id": "pub_0003",
+      "doi": "10.55555/synthica.2025.0003",
+      "title": "Do Deadlines Help? A Field Experiment on Task Completion in Student Research Teams",
+      "articleType": "Letter",
+      "authors": [
+        { "name": "Taylor Brooks", "affiliation": "Westfield Collegiate" },
+        { "name": "Dana Cole", "affiliation": "Synthica Research Network" }
+      ],
+      "category": "Economics",
+      "abstract": "We randomize soft versus hard deadlines across 40 student research teams and measure task completion over eight weeks. Hard deadlines increase on-time completion by 23 percentage points but reduce self-reported work quality; soft deadlines with visible peer progress achieve comparable completion without the quality penalty.",
+      "keywords": ["behavioural economics", "deadlines", "field experiment", "teams"],
+      "receivedAt": "2025-08-01", "acceptedAt": "2025-11-15", "publishedAt": "2025-12-20",
+      "volume": 1, "issue": 2, "pages": "28-36",
+      "pdfUrl": "https://example.org/papers/deadlines-experiment.pdf",
+      "license": "CC BY 4.0", "openAccess": true,
+      "references": [
+        "Ariely, D. & Wertenbroch, K. Procrastination, deadlines, and performance. Psychol. Sci. 13, 219-224 (2002)."
+      ],
+      "metrics": { "accesses": 289, "citations": 1, "altmetric": 3 }
+    },
+    {
+      "id": "pub_0004",
+      "doi": "10.55555/synthica.2025.0004",
+      "title": "Synthesis and Characterisation of Biodegradable Chitosan Films from Shrimp Shell Waste",
+      "articleType": "Article",
+      "authors": [
+        { "name": "Priya Nair", "affiliation": "Harbour City Secondary" },
+        { "name": "Yuki Mori", "affiliation": "Harbour City Secondary" }
+      ],
+      "category": "Chemistry",
+      "abstract": "We extract chitosan from local shrimp shell waste and cast films plasticised with glycerol, characterising tensile strength, water vapour permeability, and biodegradation over 30 days of soil burial. Films with 25% glycerol balance flexibility and degradation, suggesting a viable classroom-scale route from food waste to packaging prototypes.",
+      "keywords": ["chitosan", "biodegradable films", "green chemistry", "waste valorisation"],
+      "receivedAt": "2025-09-10", "acceptedAt": "2025-12-01", "publishedAt": "2025-12-20",
+      "volume": 1, "issue": 2, "pages": "37-49",
+      "pdfUrl": "https://example.org/papers/chitosan-films.pdf",
+      "license": "CC BY 4.0", "openAccess": true,
+      "references": [
+        "Rinaudo, M. Chitin and chitosan: Properties and applications. Prog. Polym. Sci. 31, 603-632 (2006)."
+      ],
+      "metrics": { "accesses": 198, "citations": 0, "altmetric": 2 }
+    },
+    {
+      "id": "pub_0005",
+      "doi": "10.55555/synthica.2026.0005",
+      "title": "Backyard Pollinator Diversity Across Urban Garden Microhabitats: A Season-Long Census",
+      "articleType": "Article",
+      "authors": [
+        { "name": "Robin Diaz", "affiliation": "Independent Researcher, Synthica" },
+        { "name": "Maya Chen", "affiliation": "Stanford University" }
+      ],
+      "category": "Biology",
+      "abstract": "Weekly fifteen-minute pollinator counts at six urban garden sites over one growing season reveal that native bee diversity tracks flowering plant cover more closely than site area. We provide a reproducible census protocol and discuss implications for school-garden biodiversity programs.",
+      "keywords": ["pollinators", "urban ecology", "biodiversity", "census methods"],
+      "receivedAt": "2025-11-20", "acceptedAt": "2026-02-27", "publishedAt": "2026-03-31",
+      "volume": 2, "issue": 1, "pages": "1-12",
+      "pdfUrl": "https://example.org/papers/pollinator-census.pdf",
+      "license": "CC BY 4.0", "openAccess": true,
+      "references": [
+        "Baldock, K. C. R. et al. A systems approach reveals urban pollinator hotspots and conservation opportunities. Nat. Ecol. Evol. 3, 363-373 (2019)."
+      ],
+      "metrics": { "accesses": 122, "citations": 0, "altmetric": 4 }
+    },
+    {
+      "id": "pub_0006",
+      "doi": "10.55555/synthica.2026.0006",
+      "title": "Estimating Exoplanet Transit Depths with a Backyard 8-inch Telescope: Limits and Best Practice",
+      "articleType": "Analysis",
+      "authors": [
+        { "name": "Omar Haddad", "affiliation": "MIT" },
+        { "name": "Casey Wong", "affiliation": "Lakeview Senior High" }
+      ],
+      "category": "Physics",
+      "abstract": "Using 42 nights of photometry from a consumer 8-inch reflector, we quantify the practical detection floor for exoplanet transit depths in suburban skies. Careful differential photometry recovers transits of 1.2% depth with 3-sigma confidence; we publish an open reduction pipeline tuned for student observatories.",
+      "keywords": ["exoplanets", "transit photometry", "amateur astronomy", "pipelines"],
+      "receivedAt": "2025-12-05", "acceptedAt": "2026-03-02", "publishedAt": "2026-03-31",
+      "volume": 2, "issue": 1, "pages": "13-25",
+      "pdfUrl": "https://example.org/papers/transit-depths.pdf",
+      "license": "CC BY 4.0", "openAccess": true,
+      "references": [
+        "Collins, K. A. et al. AstroImageJ: Image processing and photometric extraction for ultra-precise astronomical light curves. Astron. J. 153, 77 (2017)."
+      ],
+      "metrics": { "accesses": 301, "citations": 1, "altmetric": 9 }
+    }
+  ]
+}

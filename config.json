@@ -1,0 +1,17 @@
+{
+  "title": "Synthica Journal",
+  "shortTitle": "Synthica J.",
+  "tagline": "Peer-reviewed research by high-school and early-career scientists",
+  "issn": "pending",
+  "publisher": "Synthica",
+  "publisherUrl": "https://www.synthica.org",
+  "frequency": "Quarterly",
+  "firstYear": 2025,
+  "doiPrefix": "10.55555",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "journalUrl": "https://synthica-org.github.io/journal",
+  "dashboardUrl": "https://app.synthica.org",
+  "apiBase": "https://synthica-backend.onrender.com",
+  "contactEmail": "journal@synthica.org"
+}

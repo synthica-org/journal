@@ -1,0 +1,39 @@
+/* base.css — journal shell (header/footer/layout). Page-specific styling lives
+   in journal.css (ported from the dashboard's journal design). */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--font, 'Inter', -apple-system, sans-serif); background: var(--bg, #fff); color: var(--ink, #0a0a0a); }
+a { color: var(--brand-deep, #2589ed); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; }
+
+.jr-skip { position: absolute; left: -9999px; top: 0; background: var(--brand-deep, #2589ed); color: #fff; padding: 0.5rem 1rem; border-radius: 0 0 8px 0; z-index: 100; }
+.jr-skip:focus { left: 0; }
+
+.jr-header { border-bottom: 1px solid var(--line, #eaeaea); background: var(--bg, #fff); position: sticky; top: 0; z-index: 50; }
+.jr-header-inner { max-width: 1100px; margin: 0 auto; padding: 0.7rem 1.25rem; display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
+.jr-brand { display: flex; align-items: center; gap: 0.6rem; color: inherit; }
+.jr-brand:hover { text-decoration: none; }
+.jr-brand-mark { width: 34px; height: 34px; flex: none; display: grid; place-items: center; border-radius: 9px; font-weight: 800; color: #fff; background: linear-gradient(135deg, var(--synthica-deep, #2589ed), var(--synthica-brand, #78b4fb)); }
+.jr-brand-title { display: block; font-weight: 800; font-size: 1.05rem; line-height: 1.1; }
+.jr-brand-issn { display: block; font-size: 0.68rem; color: var(--fg-subtle, #a3a3a3); letter-spacing: 0.04em; }
+.jr-nav { display: flex; gap: 1rem; margin-left: auto; flex-wrap: wrap; }
+.jr-nav a { color: var(--fg-muted, #737373); font-weight: 600; font-size: 0.92rem; padding: 0.35rem 0.15rem; border-bottom: 2px solid transparent; }
+.jr-nav a:hover { color: var(--ink, #0a0a0a); text-decoration: none; }
+.jr-nav a.active { color: var(--brand-deep, #2589ed); border-bottom-color: var(--brand-deep, #2589ed); }
+.jr-submit-cta { flex: none; background: var(--brand-deep, #2589ed); color: #fff; font-weight: 700; font-size: 0.88rem; padding: 0.5rem 1rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(37, 137, 237, 0.25); }
+.jr-submit-cta:hover { text-decoration: none; filter: brightness(1.06); }
+
+.jr-main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.25rem 3.5rem; min-height: 55vh; }
+
+.jr-footer { border-top: 1px solid var(--line, #eaeaea); background: var(--bg-subtle, #fafafa); margin-top: 3rem; }
+.jr-footer-inner { max-width: 1100px; margin: 0 auto; padding: 2rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; font-size: 0.88rem; color: var(--fg-muted, #737373); }
+.jr-footer-col strong { color: var(--ink, #0a0a0a); display: block; margin-bottom: 0.4rem; }
+.jr-footer-col p { margin: 0.25rem 0; }
+.jr-footer-legal { text-align: center; font-size: 0.78rem; color: var(--fg-subtle, #a3a3a3); padding: 0.9rem 1rem; border-top: 1px solid var(--line, #eaeaea); }
+
+@media (max-width: 640px) {
+  .jr-header-inner { gap: 0.6rem; }
+  .jr-nav { gap: 0.7rem; margin-left: 0; width: 100%; order: 3; }
+  .jr-submit-cta { margin-left: auto; }
+}

@@ -1,0 +1,32 @@
+<footer class="jr-footer">
+  <div class="jr-footer-inner">
+    <div class="jr-footer-col">
+      <strong>{{TITLE}}</strong>
+      <p>{{TAGLINE}}.</p>
+      <p>{{ISSN_DISPLAY}} · Published {{FREQUENCY}} by {{PUBLISHER}}.</p>
+      <p>All articles are open access under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>.</p>
+    </div>
+    <div class="jr-footer-col">
+      <strong>Authors</strong>
+      <p><a href="{{SUBMIT_URL}}">Submit your research</a></p>
+      <p><a href="{{P}}for-authors/index.html">Author guidelines</a></p>
+      <p><a href="{{DASHBOARD_URL}}">Researcher dashboard</a></p>
+    </div>
+    <div class="jr-footer-col">
+      <strong>Journal</strong>
+      <p><a href="{{P}}issues/index.html">All issues</a></p>
+      <p><a href="{{P}}about/index.html">About &amp; editorial board</a></p>
+      <p><a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+    </div>
+  </div>
+  <div class="jr-footer-legal">© {{YEAR}} {{PUBLISHER}}. Content licensed CC BY 4.0 unless noted.</div>
+</footer>
+<script>
+  // Highlight the active nav item (set by layout on <body data-active>).
+  (function () {
+    var active = document.body.getAttribute('data-active');
+    if (!active) return;
+    var link = document.querySelector('.jr-nav a[data-nav="' + active + '"]');
+    if (link) link.classList.add('active');
+  })();
+</script>
