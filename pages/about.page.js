@@ -37,8 +37,11 @@ export const PAGE_CSS = `<style>
   .page-journal .u8-cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; margin-top: 1.75rem; }
   .page-journal .u8-cta { background: var(--accent) !important; color: var(--accent-fg) !important; border-color: var(--accent) !important; }
   .page-journal .u8-cta:hover { background: var(--fg) !important; color: var(--bg) !important; border-color: var(--fg) !important; }
+  .page-journal .u8-gap-top { margin-top: 1.75rem; }
 </style>`;
 
+// Mirrors the dashboard's submission categories (no public data endpoint exists
+// for these yet; update here if the dashboard's CATEGORIES list changes).
 export const CATEGORIES = [
   'Biology', 'Chemistry', 'Physics', 'Mathematics',
   'Computer Science', 'Humanities', 'Economics', 'Psychology',
@@ -123,7 +126,7 @@ export default async function build({ config, data, layout, esc }) {
       articles are published open access under ${esc(license)}, receive a DOI, and appear in the
       journal's quarterly issues.</p>
     </div>
-    <div class="card journal-req-card" style="margin-top: 1.75rem;">
+    <div class="card journal-req-card u8-gap-top">
       <h3 class="journal-process-heading">Subject categories</h3>
       <p class="journal-process-lead">The journal publishes in eight categories. Each manuscript is
       submitted to one category and is handled by that section's editors.</p>
@@ -143,7 +146,7 @@ export default async function build({ config, data, layout, esc }) {
       ${fact('Frequency', `${esc(frequency)} — four issues per volume`)}
       ${fact('ISSN', issnDisplay)}
       ${fact('DOI prefix', esc(doiPrefix))}
-      ${fact('Access &amp; license', `Open access — <a href="${esc(licenseUrl)}" rel="license">${esc(license)}</a>`)}
+      ${fact('Access & license', `Open access — <a href="${esc(licenseUrl)}" rel="license">${esc(license)}</a>`)}
       ${fact('First volume', `Volume 1 (${esc(String(firstYear))})`)}
       ${fact('Fees', 'None — free to submit, publish, and read')}
       ${fact('Contact', `<a href="mailto:${esc(contactEmail)}">${esc(contactEmail)}</a>`)}
@@ -338,7 +341,7 @@ export default async function build({ config, data, layout, esc }) {
         : `An ISSN application for the journal is in progress. Until it is assigned, the masthead shows
       &ldquo;ISSN pending&rdquo;; the number will appear there and on all issue pages once issued.
       Publisher, frequency, and numbering are maintained to the serial standard throughout.`}</p>
-      <p><strong>Volumes and issues.</strong> The journal is published ${esc(frequency.toLowerCase())} by
+      <p><strong>Volumes and issues.</strong> The journal is published ${esc(String(frequency).toLowerCase())} by
       ${esc(publisher)}. Volumes are annual — Volume 1 covers ${esc(String(firstYear))} — and each volume
       contains four quarterly issues. Accepted articles are published into the volume's open issue as
       soon as they are ready, and pages are numbered continuously within each volume, so citations are
